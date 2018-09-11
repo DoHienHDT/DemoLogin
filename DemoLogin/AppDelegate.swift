@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+import FBSDKLoginKit
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
@@ -16,7 +16,30 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        FBSDKApplicationDelegate.sharedInstance().application(application, didFinishLaunchingWithOptions: launchOptions)
         return true
+    }
+    func application(_ app: UIApplication, open url: URL, options: [UIApplicationOpenURLOptionsKey : Any] = [:]) -> Bool {
+        
+        let str_URL = url.absoluteString as NSString
+        
+        if str_URL.contains("fb1111111111111111")// put you id here
+            
+        {
+            return FBSDKApplicationDelegate.sharedInstance().application(
+                app,
+                open: url as URL,
+                sourceApplication: options[UIApplicationOpenURLOptionsKey.sourceApplication] as! String,
+                annotation: options[UIApplicationOpenURLOptionsKey.annotation])
+        }
+        
+        
+        return FBSDKApplicationDelegate.sharedInstance().application(
+            app,
+            open: url as URL,
+            sourceApplication: options[UIApplicationOpenURLOptionsKey.sourceApplication] as! String,
+            annotation: options[UIApplicationOpenURLOptionsKey.annotation])
+        
     }
 
     func applicationWillResignActive(_ application: UIApplication) {
