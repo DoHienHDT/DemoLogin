@@ -24,6 +24,7 @@
 		80D2FF1B214727660097EA3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		80D2FF1D214727660097EA3D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8319F019A946AF2BC7EDBBB4 /* Pods-DemoLogin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DemoLogin.release.xcconfig"; path = "Pods/Target Support Files/Pods-DemoLogin/Pods-DemoLogin.release.xcconfig"; sourceTree = "<group>"; };
+		B3087F0B219D7F99004204F4 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		E1A60152403C21C6D5E06E56 /* Pods-DemoLogin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DemoLogin.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DemoLogin/Pods-DemoLogin.debug.xcconfig"; sourceTree = "<group>"; };
 		EF26C822A2EA51E0F0F1B350 /* Pods_DemoLogin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DemoLogin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -52,6 +53,7 @@
 		80D2FF05214727650097EA3D = {
 			isa = PBXGroup;
 			children = (
+				B3087F0B219D7F99004204F4 /* README.md */,
 				80D2FF10214727650097EA3D /* DemoLogin */,
 				80D2FF0F214727650097EA3D /* Products */,
 				0FD8CB14949C9F1B504631B0 /* Pods */,
